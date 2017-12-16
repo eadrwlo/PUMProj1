@@ -84,10 +84,15 @@ namespace TestRepo
             };
             callButton.Click += (object sender, EventArgs e) =>
             {
-                String translatedNumber = phoneNumberTranslate.Text;
-                var callIntent = new Intent(Intent.ActionCall);
-                callIntent.SetData(Android.Net.Uri.Parse("tel:" + translatedNumber));
-                StartActivity(callIntent);
+                //String translatedNumber = phoneNumberTranslate.Text;
+                //var callIntent = new Intent(Intent.ActionCall);
+                //callIntent.SetData(Android.Net.Uri.Parse("tel:" + translatedNumber));
+                //StartActivity(callIntent);
+
+                var smsUri = Android.Net.Uri.Parse("smsto:605483342");
+                var smsIntent = new Intent(Intent.ActionSendto, smsUri);
+                smsIntent.PutExtra("sms_body", "Hello from Xamarin.Android");
+                StartActivity(smsIntent);
 
             };
 
