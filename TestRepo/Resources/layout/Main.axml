@@ -18,6 +18,11 @@
         android:layout_width="match_parent"
         android:layout_height="61.0dp"
         android:id="@+id/PhoneNumberTranslated" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="96.0dp"
+        android:id="@+id/textField" />
     <Button
         android:text="TRANSLATE"
         android:layout_width="match_parent"

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestRepo", "TestRepo\TestRepo.csproj", "{293A6ED1-B37A-45E5-A0D2-A87528E2DBFF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sender", "TestRepo\Sender.csproj", "{293A6ED1-B37A-45E5-A0D2-A87528E2DBFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

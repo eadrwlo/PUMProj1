@@ -6,7 +6,7 @@ using Android.Content;
 
 namespace TestRepo
 {
-    [Activity(Label = "TestRepo", MainLauncher = true)]
+    [Activity(Label = "Sender", MainLauncher = true)]
     public class MainActivity : Activity
     {
         //EditText phoneNumber = (Resource.Id.PhoneNumber);
@@ -89,10 +89,17 @@ namespace TestRepo
                 //callIntent.SetData(Android.Net.Uri.Parse("tel:" + translatedNumber));
                 //StartActivity(callIntent);
 
-                var smsUri = Android.Net.Uri.Parse("smsto:605483342");
-                var smsIntent = new Intent(Intent.ActionSendto, smsUri);
-                smsIntent.PutExtra("sms_body", "Hello from Xamarin.Android");
-                StartActivity(smsIntent);
+                //var smsUri = Android.Net.Uri.Parse("smsto:605483342");
+                //var smsIntent = new Intent(Intent.ActionSendto, smsUri);
+                //smsIntent.PutExtra("sms_body", "Hello from Xamarin.Android");
+                //StartActivity(smsIntent);
+
+                var email = new Intent(Intent.ActionSend);
+                email.PutExtra(Intent.ExtraEmail, "wlodek14a@gmail.com");
+                email.PutExtra(Intent.ExtraText, "Message");
+                email.PutExtra(Intent.ExtraSubject, "Hi");
+                email.SetType("message/rfc822");
+                StartActivity(email);
 
             };
 

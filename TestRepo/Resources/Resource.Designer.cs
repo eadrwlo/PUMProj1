@@ -44,8 +44,8 @@ namespace TestRepo
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f040004
-			public const int Call = 2130968580;
+			// aapt resource value: 0x7f040005
+			public const int Call = 2130968581;
 			
 			// aapt resource value: 0x7f040001
 			public const int PhoneNumber = 2130968577;
@@ -53,8 +53,11 @@ namespace TestRepo
 			// aapt resource value: 0x7f040002
 			public const int PhoneNumberTranslated = 2130968578;
 			
+			// aapt resource value: 0x7f040004
+			public const int Translate = 2130968580;
+			
 			// aapt resource value: 0x7f040003
-			public const int Translate = 2130968579;
+			public const int textField = 2130968579;
 			
 			// aapt resource value: 0x7f040000
 			public const int textView1 = 2130968576;
