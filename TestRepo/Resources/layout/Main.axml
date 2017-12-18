@@ -4,22 +4,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
-        android:text="Adresat"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView1" />
-    <EditText
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="61.0dp"
-        android:id="@+id/recipientField" />
-    <EditText
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0.0dp">
+        <EditText
+            android:layout_width="253.0dp"
+            android:layout_height="61.0dp"
+            android:hint="adresat..."
+            android:id="@+id/recipientField" />
+        <Button
+            android:text="CLEAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clearRecipientField"
+            android:theme="@android:style/MediaButton" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="101.0dp"
-        android:id="@+id/contentsField"
-        android:text="tresc" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2.0dp"
+        android:layout_marginTop="4.0dp">
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="251.5dp"
+            android:id="@+id/subjectField"
+            android:hint="temat..." />
+        <Button
+            android:text="CLEAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clearSubjectField"
+            android:layout_marginRight="0.0dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="160.5dp"
+        android:layout_marginBottom="0.0dp">
+        <EditText
+            android:layout_width="253.0dp"
+            android:layout_height="134.5dp"
+            android:id="@+id/contentsField"
+            android:clickable="true"
+            android:hint="wpisz treść..."
+            android:textAlignment="textStart"
+            android:gravity="top"
+            android:layout_marginRight="0.0dp" />
+        <Button
+            android:text="CLEAR"
+            android:layout_width="82.0dp"
+            android:layout_height="92.0dp"
+            android:id="@+id/clearContentsField"
+            android:layout_marginBottom="13.0dp"
+            android:layout_marginLeft="0.0dp"
+            android:layout_marginTop="35.0dp"
+            android:layout_marginRight="7.0dp" />
+    </LinearLayout>
     <Button
-        android:text="CALL"
+        android:text="GO"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Call" />
